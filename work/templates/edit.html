@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑页面</title>
+    <link rel="stylesheet" href="../static/css/edit.css">
+    <style>
+        .edit{
+            width: 500px;
+            height: 600px;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>编辑项目</h1>
+    <div class="edit">
+        <form action="/edits" method="post">
+            项目名称:<input type="text" name="project"><br>
+            <p>项目描述:</p>
+            <textarea rows="30" cols="50" name="edit_info"></textarea><br>
+            <br>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="../static/imgs/logo.png" alt="">
+        </div>
+        <div class="nav">
+           <ul>
+               <li><a href="" style="color:#ff7f21">文章</a></li>
+               <li><a href="">微语</a></li>
+               <li><a href="">留言</a></li>
+               <li><a href="">相册</a> </li>
+               <li><a href="/">返回</a></li>
+           </ul>
+        </div>
+        <p style="float: right;margin-top: 50px;margin-right: 100px">欢迎来到{{userinfo}}的博客~</p>
+
+    </div>
+    <div class="clear"></div>
+    <div class="banner">
+        <div class="title">
+            <h3>
+                MY <br>
+                BLOG
+            </h3>
+            <h4>well-balanced heart</h4>
+        </div>
+        <div class="amount">
+                <p style="margin-bottom: 30px"><span>访问量:</span><span>1000</span></p>
+                <p><span>日志:</span><span>1000</span></p>
+        </div>
+    </div>
+    <div class="line">
+            <h4>lets know more about who is <span style="color: #d82008">sarah!</span> </h4>
+        </div>
+
+    <div class="container">
+        <div class="left_cont">
+            <h1 style="margin-bottom: 30px;color: #001757">FUSCE ULTRICES FRINGILLA</h1>
+            <p>This is Aqueous, a responsive HTML5 site template freebie. Released for free under the Creative Commons Attribution license, so use it for whatever (personal or commercial) – just give us credit!
+                Check out more of our stuff at or follow us on.</p>
+            <p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed
+                etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
+            <p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit,
+                euismod lacinia quam nisl id lorem. Quisque erat.</p>
+            <span></span>
+        </div>
+        <div class="right_cont">
+            <h3 style="text-align: center;margin-bottom: 30px">MY BLOG</h3>
+            <div class=" shop_info">
+                <ul>
+                    {% for shop in shoplist %}
+                        <li>
+                            <a href="{{url_for('details',detail=shop.id)}}">{{shop.name}}</a>
+                            <a href="{{url_for('redact',sid=shop.id)}}" style="position: absolute;right: 50px">编辑</a>
+                            <a href="{{url_for('shoplist',num=shop.id)}}" style="position: absolute;right: 0">删除</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <br><br>
+                <a href="/edits" style="background-color: #ff4c4c;color: #fff;
+                    padding: 9px 10px">添加博客</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

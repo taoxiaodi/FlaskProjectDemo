@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书</title>
+    <style>
+        *{list-style: none;padding:0;margin:0;text-decoration: none;}
+        body{
+            background-image: url("../static/imgs/book.jpg");
+            background-repeat: no-repeat;
+            background-size:100%;
+        }
+        a{
+            font-size: 19px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .index{
+            position: relative;
+            margin: 100px auto;
+            width: 500px;
+            height: 300px;
+            background-color:rgba(0,0,0,0.4) ;
+            text-align: center;
+            padding-top:200px;
+            padding-bottom: 200px;
+            box-shadow:0px 0px 3px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="index">
+        <img src="../static/imgs/tou.jpg" style="width: 100px;
+        height: 100px;border-radius: 50%;position: absolute;top: 50px;left: 200px">
+        <h1 style="color: #fff;">{{userinfo}}的博客</h1>
+            {%if userinfo %}
+                <a href="#" style="font-size: 20px; position:absolute;
+                left:0;top:0;">你好:{{userinfo}}</a><br>
+                <br>
+                <br>
+                <a href="/login" style="background-color:#fff;
+                    padding: 10px 35px;border-radius: 15px;color:#999;">开启旅程</a><br><br><br>
+                <a href="/drop" style="background-color:#fff;
+                    padding: 10px 35px;border-radius: 15px;color:#999;">下次光临</a>
+            {% else %}
+                 <div class="reg_log">
+                     <br>
+                     <br>
+                     <br>
+                    <a href="/login" style="background-color:#fff;
+                    padding: 10px 35px;border-radius: 15px;color:#999;">登录</a><br><br><br>
+                    <a href="/regist" style="background-color:#fff;
+                    padding: 10px 35px;border-radius: 15px;color:#999;">注册</a>
+                 </div>
+            {%endif%}
+    </div>
+</body>
+</html>

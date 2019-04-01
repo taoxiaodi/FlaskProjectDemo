@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登录</title>
+    <style>
+        *{color: #fff}
+        body{
+            background-image: url("../static/imgs/login.jpg");
+            background-repeat: no-repeat;
+            background-size:100%;
+        }
+        .login{
+            position: relative;
+            margin: 100px auto;
+            width: 500px;
+            height: 300px;
+            background-color:rgba(0,0,0,0.4) ;
+            text-align: center;
+            padding-top:200px;
+            padding-bottom: 200px;
+            box-shadow:0px 0px 3px #000;
+        }
+        .login input{
+            width: 200px;
+            height: 30px;
+            background-color:#fff ;
+            margin-top: 30px;
+            outline: none;
+            color: #999;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+        <div class="login">
+            <img src="../static/imgs/tou.jpg" style="width: 100px;
+            height: 100px;border-radius: 50%;position: absolute;top: 50px;left: 200px">
+            <h1 style="margin-right: 10px">欢迎登录</h1>
+            <form action="/login" method="post" autocomplete="off">
+                <input type="text" name="username" value=""><br>
+                <input type="text" name="password" value=""><br>
+                <br>
+                <input type="submit" value="登录" style="margin:20px 20px 0 0px;
+                 width: 60px; background-color: #f05f40;border:1px solid #fff;color: #fff">
+                <span><a href="/" style="text-decoration: none;background-color:#f05f40;
+                    padding:5px 15px;font-size: 14px;border:1px solid #fff;color: #fff">退出</a></span>
+            </form>
+        </div>
+        <br>
+</body>
+</html>

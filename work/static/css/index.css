@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+.top div{
+    float: left;
+    margin: 30px 80px;
+}
+.nav li{
+    float: left;
+    margin-right: 80px;
+    line-height: 50px;
+}
+.nav li a{
+   color: #3F2863;
+}
+.clear{clear: both}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image:url('../imgs/banner.jpg') ;
+    margin-bottom: 70px;
+}
+.banner .title{
+    position: absolute;
+    top: 110px;
+    left: 428px;
+    color:#fff;
+    font-weight: normal;
+}
+.banner h3{
+    font-size: 80px;
+    font-weight: normal;
+}
+.banner h4{
+    font-size: 46px;
+    font-weight: normal;
+}
+.amount{
+    position:absolute;
+    top: 290px;
+    right:572px;
+    font-size: 18px;
+    color:#ff7f21;
+}
+.amount span{
+    margin-left: 30px;
+}
+.line{
+    position: relative;
+    width: 100%;
+    border:1px solid darkgray ;
+    margin-bottom: 150px;
+}
+.line h4{
+    position: absolute;
+    top:-30px;
+    left: 570px;
+    width: 723px;
+    height: 45px;
+    padding-left: 30px;
+    background: #fff;
+    font-size: 38px;
+    color: #959595;
+}
+.container{
+    width: 1100px;
+    height: 600px;
+    /*border: 1px solid red;*/
+    margin: auto;
+}
+.container .left_cont{
+    float: left;
+    width: 700px;
+    height: 600px;
+    color:#989898;
+    text-align: left;
+    padding-right: 40px;
+    border-right: 1px dashed darkgray;
+}
+.left_cont p{
+    margin-top: 40px;
+}
+.right_cont{
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 600px;
+}
+
+.right_cont .shop_info li{
+    margin-top: 20px;
+    display: block;
+    border-bottom:1px dashed darkgray;
+}
+.shop_info a{
+    color: #0f0f0f;
+}
+.shop_info a:hover{
+    color: #d82008;
+}

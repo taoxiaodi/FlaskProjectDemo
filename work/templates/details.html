@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="../static/css/details.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="left">
+            <img src="../static/imgs/home.jpg" alt="">
+        </div>
+        <div class="right">
+            <a href="/shoplist" class="tuichu">返回</a>
+            <div class="right_cont">
+                <img src="../static/imgs/head.png" alt="">
+                <h2 style="margin-top: -5px">I AM {{userinfo}}</h2>
+                <h3>标题: {{userlist.name}}</h3>
+                <p>{{userlist.details}}</p>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    background-color: #f9f9f9;
+}
+.cont{
+    margin:100px auto;
+    width: 1170px;
+    background-color: #fff;
+}
+.left{
+    float: left;
+}
+.right{
+    position: relative;
+    float: right;
+    width: 550px;
+}
+.tuichu{
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    padding: 5px 5px;
+    background-color:#ff4c4c;
+    color:#fff;
+    border-radius:50%;
+    box-shadow: 1px 3px 1px #000;
+}
+.clear{
+    clear: both;
+}
+.right_cont{
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    padding-top: 50px;
+}
